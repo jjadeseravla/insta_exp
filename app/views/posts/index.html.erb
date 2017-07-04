@@ -1,0 +1,8 @@
+<% @posts.each do |x| %>
+  <div class="white">
+    <%= image_tag x.image.url(:medium) %>
+    <%= x.image.url %>
+    <br>
+    <%= x.description %>
+  </div>
+<% end %>
